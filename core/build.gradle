@@ -9,7 +9,6 @@ ext {
 
 android {
     compileSdkVersion versions.compileSdk
-    buildToolsVersion versions.buildTools
 
     defaultConfig {
         minSdkVersion versions.minSdk
@@ -31,10 +30,11 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:support-annotations:' + versions.supportLib
-    implementation 'com.android.support:appcompat-v7:' + versions.supportLib
-    implementation 'com.android.support:recyclerview-v7:' + versions.supportLib
+//    implementation 'com.android.support:support-annotations:' + versions.supportLib
+//    implementation 'com.android.support:appcompat-v7:' + versions.supportLib
+//    implementation 'com.android.support:recyclerview-v7:' + versions.supportLib
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
     implementation 'me.zhanghai.android.materialprogressbar:library:' + versions.mdProgressBar
 }
 
-apply from: 'https://raw.githubusercontent.com/afollestad/aidanfollestad.com/master/android-lib-release.gradle'
+//apply from: 'https://raw.githubusercontent.com/afollestad/aidanfollestad.com/master/android-lib-release.gradle'
